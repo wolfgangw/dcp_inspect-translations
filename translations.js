@@ -1,5 +1,84 @@
 // SPDX-License-Identifier: BSD-3-Clause
 
+export const CADENCE_MESSAGES = {
+  en: {
+    cadenceTools: 'Tools', cadenceDetect: 'Detect native framerate',
+    cadenceDetails: 'Source framerate detection', cadenceCancel: 'Cancel detection',
+    cadenceUnavailable: 'Requires an exact composition timeline and available JPEG2000 picture assets.',
+    cadenceEncrypted: 'Encrypted picture is not supported by source framerate detection yet.',
+    cadenceBusy: 'Another composition is being examined.',
+    cadenceProgress: 'Examining spot {completed} of {total}', cadenceCancelled: 'Detection cancelled',
+    cadenceFailed: 'Detection failed: {message}', cadenceConfirmed: 'Inferred source framerate: {rates} fps',
+    cadenceMixed: 'Mixed cadence ({rates} fps)', cadenceMixedShort: 'mixed',
+    cadenceInconclusive: 'Inconclusive · candidate rates: {rates}',
+    cadenceStats: '{frames} frames · {bytes} MiB read · {seconds} s',
+    cadenceLimit: 'Work limit reached; examination is incomplete.',
+    cadenceLeftEye: 'Stereoscopic composition: left-eye evidence only.',
+    cadenceSpotRate: '{rate} fps · holds {pattern}', cadenceFrozen: 'Frozen / insufficient picture change',
+    cadenceNoPattern: 'No confirmed repetition pattern', cadenceReadFailed: 'Could not examine this spot',
+    cadencePixels: 'Reduced-resolution pixel comparison', cadenceBytes: 'Exact codestream comparison',
+    cadenceRateTooltip: 'Composition edit rate (inferred source framerate); evidence in source framerate detection details.',
+    cadenceExplanation: 'Samples the central 90% of the composition, independent of reels. Repeating image holds suggest a source rate, not a historical filming speed. Frozen passages provide no rate evidence. At most 12 locations, 3 attempts each, 8 seconds per attempt, 6,000 frame examinations, 1 GiB read and 90 seconds. Exact reduced-resolution comparison is a fallback; near-duplicates and long or changing patterns can remain inconclusive. Click a timecode to inspect that spot in the player.'
+  },
+  de: {
+    cadenceTools: 'Werkzeuge', cadenceDetect: 'Ursprüngliche Bildrate erkennen',
+    cadenceDetails: 'Erkennung der Quellbildrate', cadenceCancel: 'Erkennung abbrechen',
+    cadenceUnavailable: 'Erfordert eine exakte Kompositions-Timeline und verfügbare JPEG2000-Bildassets.',
+    cadenceEncrypted: 'Verschlüsseltes Bild wird bei der Bildratenerkennung noch nicht unterstützt.',
+    cadenceBusy: 'Eine andere Komposition wird untersucht.',
+    cadenceProgress: 'Untersuche Stelle {completed} von {total}', cadenceCancelled: 'Erkennung abgebrochen',
+    cadenceFailed: 'Erkennung fehlgeschlagen: {message}', cadenceConfirmed: 'Ermittelte Quellbildrate: {rates} fps',
+    cadenceMixed: 'Gemischte Kadenz ({rates} fps)', cadenceMixedShort: 'gemischt',
+    cadenceInconclusive: 'Nicht eindeutig · mögliche Bildraten: {rates}',
+    cadenceStats: '{frames} Frames · {bytes} MiB gelesen · {seconds} s',
+    cadenceLimit: 'Arbeitslimit erreicht; Untersuchung unvollständig.',
+    cadenceLeftEye: 'Stereoskopische Komposition: nur linkes Auge untersucht.',
+    cadenceSpotRate: '{rate} fps · Haltedauern {pattern}', cadenceFrozen: 'Standbild / zu wenig Bildänderung',
+    cadenceNoPattern: 'Kein bestätigtes Wiederholungsmuster', cadenceReadFailed: 'Stelle konnte nicht untersucht werden',
+    cadencePixels: 'Pixelvergleich bei reduzierter Auflösung', cadenceBytes: 'Exakter Codestream-Vergleich',
+    cadenceRateTooltip: 'Kompositionsbildrate (ermittelte Quellbildrate); Belege in den Details zur Bildratenerkennung.',
+    cadenceExplanation: 'Stichproben in den mittleren 90 % der Komposition, unabhängig von Reels. Wiederholte Bildhaltedauern deuten auf eine Quellbildrate hin, nicht auf die historische Aufnahmegeschwindigkeit. Standbilder liefern keinen Bildratenbeleg. Maximal 12 Stellen mit je 3 Versuchen, 8 Sekunden pro Versuch, 6.000 Frame-Untersuchungen, 1 GiB gelesen und 90 Sekunden. Exakter Pixelvergleich bei reduzierter Auflösung dient als Rückfall; fast identische Bilder sowie lange oder wechselnde Muster können uneindeutig bleiben. Timecode anklicken, um die Stelle im Player zu untersuchen.'
+  },
+  fr: {
+    cadenceTools: 'Outils', cadenceDetect: 'Détecter la cadence native',
+    cadenceDetails: 'Détection de la cadence source', cadenceCancel: 'Annuler la détection',
+    cadenceUnavailable: 'Nécessite une timeline exacte et des images JPEG2000 disponibles.',
+    cadenceEncrypted: 'Les images chiffrées ne sont pas encore prises en charge pour cette détection.',
+    cadenceBusy: 'Une autre composition est en cours d’examen.',
+    cadenceProgress: 'Examen du point {completed} sur {total}', cadenceCancelled: 'Détection annulée',
+    cadenceFailed: 'Échec de la détection : {message}', cadenceConfirmed: 'Cadence source déduite : {rates} fps',
+    cadenceMixed: 'Cadences mixtes ({rates} fps)', cadenceMixedShort: 'mixte',
+    cadenceInconclusive: 'Non concluant · cadences candidates : {rates}',
+    cadenceStats: '{frames} images · {bytes} MiB lus · {seconds} s',
+    cadenceLimit: 'Limite de travail atteinte ; examen incomplet.',
+    cadenceLeftEye: 'Composition stéréoscopique : œil gauche uniquement.',
+    cadenceSpotRate: '{rate} fps · durées {pattern}', cadenceFrozen: 'Image fixe / changement insuffisant',
+    cadenceNoPattern: 'Aucun motif de répétition confirmé', cadenceReadFailed: 'Impossible d’examiner ce point',
+    cadencePixels: 'Comparaison des pixels à résolution réduite', cadenceBytes: 'Comparaison exacte des codestreams',
+    cadenceRateTooltip: 'Cadence de la composition (cadence source déduite) ; preuves dans les détails de détection.',
+    cadenceExplanation: 'Échantillonne les 90 % centraux de la composition, indépendamment des bobines. Les répétitions suggèrent une cadence source, pas une vitesse de tournage historique. Les images fixes ne prouvent aucune cadence. Maximum : 12 points, 3 essais chacun, 8 secondes par essai, 6 000 examens d’images, 1 GiB lu et 90 secondes. Comparaison exacte à résolution réduite en recours ; les quasi-doublons et motifs longs ou variables peuvent rester non concluants. Cliquer sur un timecode pour ouvrir ce point dans le lecteur.'
+  },
+  it: {
+    cadenceTools: 'Strumenti', cadenceDetect: 'Rileva la frequenza nativa',
+    cadenceDetails: 'Rilevamento della frequenza sorgente', cadenceCancel: 'Annulla rilevamento',
+    cadenceUnavailable: 'Richiede una timeline esatta e immagini JPEG2000 disponibili.',
+    cadenceEncrypted: 'Le immagini cifrate non sono ancora supportate da questo rilevamento.',
+    cadenceBusy: 'È in corso l’esame di un’altra composizione.',
+    cadenceProgress: 'Esame del punto {completed} di {total}', cadenceCancelled: 'Rilevamento annullato',
+    cadenceFailed: 'Rilevamento non riuscito: {message}', cadenceConfirmed: 'Frequenza sorgente dedotta: {rates} fps',
+    cadenceMixed: 'Cadenze miste ({rates} fps)', cadenceMixedShort: 'mista',
+    cadenceInconclusive: 'Non conclusivo · frequenze candidate: {rates}',
+    cadenceStats: '{frames} fotogrammi · {bytes} MiB letti · {seconds} s',
+    cadenceLimit: 'Limite di lavoro raggiunto; esame incompleto.',
+    cadenceLeftEye: 'Composizione stereoscopica: solo occhio sinistro.',
+    cadenceSpotRate: '{rate} fps · durate {pattern}', cadenceFrozen: 'Immagine fissa / variazione insufficiente',
+    cadenceNoPattern: 'Nessun motivo di ripetizione confermato', cadenceReadFailed: 'Impossibile esaminare questo punto',
+    cadencePixels: 'Confronto dei pixel a risoluzione ridotta', cadenceBytes: 'Confronto esatto dei codestream',
+    cadenceRateTooltip: 'Frequenza della composizione (frequenza sorgente dedotta); prove nei dettagli del rilevamento.',
+    cadenceExplanation: 'Campiona il 90% centrale della composizione, indipendentemente dalle bobine. Le ripetizioni suggeriscono una frequenza sorgente, non una velocità storica di ripresa. Le immagini fisse non forniscono prove. Massimo: 12 punti, 3 tentativi ciascuno, 8 secondi per tentativo, 6.000 esami di fotogrammi, 1 GiB letto e 90 secondi. Confronto esatto a risoluzione ridotta come alternativa; quasi-duplicati e motivi lunghi o variabili possono restare inconcludenti. Fare clic su un timecode per aprire il punto nel lettore.'
+  }
+};
+
 export const TRANSLATIONS = {
   de: {
     accessibilityBelowGate: 'Unter Messschwelle',
