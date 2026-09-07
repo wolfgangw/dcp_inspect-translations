@@ -2,6 +2,7 @@
 
 export const CADENCE_MESSAGES = {
   en: {
+    cadenceSpotsChecked: 'Spots checked: {count}',
     cadencePatternLegend: 'Blue: distinct frame · Orange: repeat of preceding frame · One pattern cycle',
     cadenceTools: 'Tools', cadenceDetect: 'Detect native framerate',
     cadenceDetails: 'Source framerate detection', cadenceCancel: 'Cancel detection',
@@ -25,6 +26,7 @@ export const CADENCE_MESSAGES = {
     cadenceExplanation: 'Samples the central 90% of the composition, independent of reels. Repeating image holds suggest a source rate, not a historical filming speed. Frozen passages provide no rate evidence. At most 12 locations, 3 attempts each, 8 seconds per attempt, 6,000 frame examinations, 1 GiB read and 90 seconds. Exact reduced-resolution comparison is a fallback; near-duplicates and long or changing patterns can remain inconclusive. Click a timecode to inspect that spot in the player.'
   },
   de: {
+    cadenceSpotsChecked: 'Stellen geprüft: {count}',
     cadencePatternLegend: 'Blau: eigenständiges Bild · Orange: Wiederholung des vorigen Bildes · Ein Musterzyklus',
     cadenceTools: 'Werkzeuge', cadenceDetect: 'Ursprüngliche Bildrate erkennen',
     cadenceDetails: 'Erkennung der Quellbildrate', cadenceCancel: 'Erkennung abbrechen',
@@ -48,6 +50,7 @@ export const CADENCE_MESSAGES = {
     cadenceExplanation: 'Stichproben in den mittleren 90 % der Komposition, unabhängig von Reels. Wiederholte Bildhaltedauern deuten auf eine Quellbildrate hin, nicht auf die historische Aufnahmegeschwindigkeit. Standbilder liefern keinen Bildratenbeleg. Maximal 12 Stellen mit je 3 Versuchen, 8 Sekunden pro Versuch, 6.000 Frame-Untersuchungen, 1 GiB gelesen und 90 Sekunden. Exakter Pixelvergleich bei reduzierter Auflösung dient als Rückfall; fast identische Bilder sowie lange oder wechselnde Muster können uneindeutig bleiben. Timecode anklicken, um die Stelle im Player zu untersuchen.'
   },
   fr: {
+    cadenceSpotsChecked: 'Extraits examinés : {count}',
     cadencePatternLegend: 'Bleu : image distincte · Orange : répétition de l’image précédente · Un cycle du motif',
     cadenceTools: 'Outils', cadenceDetect: 'Détecter la cadence native',
     cadenceDetails: 'Détection de la cadence source', cadenceCancel: 'Annuler la détection',
@@ -71,6 +74,7 @@ export const CADENCE_MESSAGES = {
     cadenceExplanation: 'Échantillonne les 90 % centraux de la composition, indépendamment des bobines. Les répétitions suggèrent une cadence source, pas une vitesse de tournage historique. Les images fixes ne prouvent aucune cadence. Maximum : 12 points, 3 essais chacun, 8 secondes par essai, 6 000 examens d’images, 1 GiB lu et 90 secondes. Comparaison exacte à résolution réduite en recours ; les quasi-doublons et motifs longs ou variables peuvent rester non concluants. Cliquer sur un timecode pour ouvrir ce point dans le lecteur.'
   },
   it: {
+    cadenceSpotsChecked: 'Campioni esaminati: {count}',
     cadencePatternLegend: 'Blu: fotogramma distinto · Arancione: ripetizione del fotogramma precedente · Un ciclo del motivo',
     cadenceTools: 'Strumenti', cadenceDetect: 'Rileva la frequenza nativa',
     cadenceDetails: 'Rilevamento della frequenza sorgente', cadenceCancel: 'Annulla rilevamento',
