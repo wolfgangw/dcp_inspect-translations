@@ -197,6 +197,24 @@ export const RDD52_MESSAGES = Object.fromEntries(['en', 'de', 'fr', 'it'].map((l
   language, Object.fromEntries(RDD52_REPORT_TEXT.map((row) => [row[0], row[column]]))
 ]));
 
+// General inspection findings, separate from profile-report messages.
+const FINDING_TEXT = [
+  ['CPL MainSound Language {0} is inconsistent with MXF soundfield-group language {1} (SMPTE ST 429-7 §8.5–8.5.1). The MXF value takes precedence.',
+    'CPL MainSound Language {0} stimmt nicht mit der Sprache der MXF-Soundfield-Group {1} überein (SMPTE ST 429-7 §8.5–8.5.1). Der MXF-Wert hat Vorrang.',
+    'CPL MainSound Language {0} ne correspond pas à la langue du groupe de champ sonore MXF {1} (SMPTE ST 429-7 §8.5–8.5.1). La valeur MXF prévaut.',
+    'CPL MainSound Language {0} non corrisponde alla lingua del gruppo di campo sonoro MXF {1} (SMPTE ST 429-7 §8.5–8.5.1). Il valore MXF ha la precedenza.'],
+  ['[absent: no spoken language]', '[fehlt: keine gesprochene Sprache]', '[absent : aucune langue parlée]', '[assente: nessuna lingua parlata]'],
+  ['[absent]', '[fehlt]', '[absent]', '[assente]'],
+  ['Reel {0}: {1}', 'Rolle {0}: {1}', 'Bobine {0} : {1}', 'Rullo {0}: {1}'],
+  ['CPL MainSound Language values are inconsistent across the composition ({0}).',
+    'Die CPL-MainSound-Language-Werte sind innerhalb der Komposition uneinheitlich ({0}).',
+    'Les valeurs CPL MainSound Language sont incohérentes dans la composition ({0}).',
+    'I valori CPL MainSound Language sono incoerenti nella composizione ({0}).']
+];
+export const FINDING_MESSAGES = Object.fromEntries(['en', 'de', 'fr', 'it'].map((language, column) => [
+  language, Object.fromEntries(FINDING_TEXT.map((row) => [row[0], row[column]]))
+]));
+
 export const CADENCE_MESSAGES = {
   en: {
     cadenceSpotsChecked: 'Spots checked: {count}',
