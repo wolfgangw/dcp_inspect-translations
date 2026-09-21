@@ -3,6 +3,9 @@
 // RDD 52 report templates. Columns: canonical English, German, French, Italian.
 // {0}, {1}, ... are evidence values, not translatable text. Keep XML/marker names intact.
 const RDD52_REPORT_TEXT = [
+  ["Drop folders to add DCPs","Ordner ablegen, um DCPs hinzuzufügen","Déposez des dossiers pour ajouter des DCP","Trascina le cartelle per aggiungere DCP"],
+  ["Please wait for the current directory selection to finish.","Bitte warten, bis die aktuelle Verzeichnisauswahl abgeschlossen ist.","Veuillez attendre la fin de la sélection de dossier en cours.","Attendi il completamento della selezione della cartella in corso."],
+  ["Individual files were not added. Drop their containing folders, or use Select directory.","Einzelne Dateien wurden nicht hinzugefügt. Bitte die zugehörigen Ordner ablegen oder „Verzeichnis wählen“ verwenden.","Les fichiers individuels n’ont pas été ajoutés. Déposez leurs dossiers parents ou utilisez « Sélectionner un dossier ».","I singoli file non sono stati aggiunti. Trascina le cartelle che li contengono oppure usa « Seleziona cartella »."],
   ["n/a ({classification})","n/a ({classification})","s.o. ({classification})","n/a ({classification})"],
   ["Not applicable","Nicht anwendbar","Sans objet","Non applicabile"],
   ["RDD 52 applies to SMPTE packaging, not Interop. Applicable Interop and asset checks remain active.","RDD 52 gilt für SMPTE-Packaging, nicht für Interop. Anwendbare Interop- und Asset-Prüfungen bleiben aktiv.","RDD 52 concerne le paquetage SMPTE, pas Interop. Les contrôles Interop et des assets applicables restent actifs.","RDD 52 si applica al confezionamento SMPTE, non a Interop. I controlli Interop e degli asset applicabili restano attivi."],
