@@ -3,6 +3,7 @@
 // RDD 52 report templates. Columns: canonical English, German, French, Italian.
 // {0}, {1}, ... are evidence values, not translatable text. Keep XML/marker names intact.
 const RDD52_REPORT_TEXT = [
+  ['Header metadata only', 'Nur Header-Metadaten', 'Métadonnées d’en-tête uniquement', 'Solo metadati dell’intestazione'],
   ['Listed (PKL): {listed} · Actual file: {actual}', 'Gelistet (PKL): {listed} · Tatsächliche Datei: {actual}', 'Indiqué (PKL) : {listed} · Fichier réel : {actual}', 'Dichiarato (PKL): {listed} · File effettivo: {actual}'],
   ['Expected hash (PKL): {expected} · Actual asset hash: {actual}', 'Erwarteter Hash (PKL): {expected} · Tatsächlicher Asset-Hash: {actual}', 'Empreinte attendue (PKL) : {expected} · Empreinte réelle de l’asset : {actual}', 'Hash previsto (PKL): {expected} · Hash effettivo dell’asset: {actual}'],
   ["Drop folders to add DCPs","Ordner ablegen, um DCPs hinzuzufügen","Déposez des dossiers pour ajouter des DCP","Trascina le cartelle per aggiungere DCP"],
