@@ -3,6 +3,8 @@
 // RDD 52 report templates. Columns: canonical English, German, French, Italian.
 // {0}, {1}, ... are evidence values, not translatable text. Keep XML/marker names intact.
 const RDD52_REPORT_TEXT = [
+  ['Listed (PKL): {listed} · Actual file: {actual}', 'Gelistet (PKL): {listed} · Tatsächliche Datei: {actual}', 'Indiqué (PKL) : {listed} · Fichier réel : {actual}', 'Dichiarato (PKL): {listed} · File effettivo: {actual}'],
+  ['Expected hash (PKL): {expected} · Actual asset hash: {actual}', 'Erwarteter Hash (PKL): {expected} · Tatsächlicher Asset-Hash: {actual}', 'Empreinte attendue (PKL) : {expected} · Empreinte réelle de l’asset : {actual}', 'Hash previsto (PKL): {expected} · Hash effettivo dell’asset: {actual}'],
   ["Drop folders to add DCPs","Ordner ablegen, um DCPs hinzuzufügen","Déposez des dossiers pour ajouter des DCP","Trascina le cartelle per aggiungere DCP"],
   ["Please wait for the current directory selection to finish.","Bitte warten, bis die aktuelle Verzeichnisauswahl abgeschlossen ist.","Veuillez attendre la fin de la sélection de dossier en cours.","Attendi il completamento della selezione della cartella in corso."],
   ["Individual files were not added. Drop their containing folders, or use Select directory.","Einzelne Dateien wurden nicht hinzugefügt. Bitte die zugehörigen Ordner ablegen oder „Verzeichnis wählen“ verwenden.","Les fichiers individuels n’ont pas été ajoutés. Déposez leurs dossiers parents ou utilisez « Sélectionner un dossier ».","I singoli file non sono stati aggiunti. Trascina le cartelle che li contengono oppure usa « Seleziona cartella »."],
