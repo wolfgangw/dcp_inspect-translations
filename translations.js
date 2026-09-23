@@ -3,6 +3,9 @@
 // RDD 52 report templates. Columns: canonical English, German, French, Italian.
 // {0}, {1}, ... are evidence values, not translatable text. Keep XML/marker names intact.
 const RDD52_REPORT_TEXT = [
+  ['Corrupt sound', 'Beschädigter Ton', 'Son endommagé', 'Audio danneggiato'],
+  ['Missing sound', 'Fehlender Ton', 'Son manquant', 'Audio mancante'],
+  ['Media availability not established', 'Medienverfügbarkeit nicht festgestellt', 'Disponibilité du média non établie', 'Disponibilità del contenuto non accertata'],
   ['Corrupt picture', 'Beschädigtes Bild', 'Image endommagée', 'Immagine danneggiata'],
   ['Missing picture', 'Fehlendes Bild', 'Image manquante', 'Immagine mancante'],
   ['Picture availability not established', 'Bildverfügbarkeit nicht festgestellt', 'Disponibilité des images non établie', 'Disponibilità delle immagini non accertata'],
