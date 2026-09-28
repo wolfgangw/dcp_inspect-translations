@@ -3,6 +3,13 @@
 // RDD 52 report templates. Columns: canonical English, German, French, Italian.
 // {0}, {1}, ... are evidence values, not translatable text. Keep XML/marker names intact.
 const RDD52_REPORT_TEXT = [
+  ['Channel interpretation', 'Kanalinterpretation', 'Interprétation des canaux', 'Interpretazione dei canali'],
+  ['Automatic', 'Automatisch', 'Automatique', 'Automatica'],
+  ['user-selected', 'manuell gewählt', 'choisi par l’utilisateur', 'scelto dall’utente'],
+  ['IMAX 12-channel · user-selected', 'IMAX 12-Kanal · manuell gewählt', 'IMAX 12 canaux · choisi par l’utilisateur', 'IMAX 12 canali · scelto dall’utente'],
+  ['No channel labels are present. Choose an interpretation if you know the source layout.', 'Es sind keine Kanal-Labels vorhanden. Wählen Sie eine Interpretation, wenn Sie die Quellbelegung kennen.', 'Aucun label de canal n’est présent. Choisissez une interprétation si vous connaissez la disposition source.', 'Non sono presenti etichette dei canali. Scegli un’interpretazione se conosci la disposizione della sorgente.'],
+  ['Wait for audio analysis to finish before changing channel interpretation.', 'Warten Sie vor dem Ändern der Kanalinterpretation auf den Abschluss der Audioanalyse.', 'Attendez la fin de l’analyse audio avant de modifier l’interprétation des canaux.', 'Attendi la fine dell’analisi audio prima di cambiare l’interpretazione dei canali.'],
+  ['Recalculate loudness', 'Lautheit neu berechnen', 'Recalculer la sonie', 'Ricalcola la loudness'],
   ['Corrupt sound', 'Beschädigter Ton', 'Son endommagé', 'Audio danneggiato'],
   ['Missing sound', 'Fehlender Ton', 'Son manquant', 'Audio mancante'],
   ['Media availability not established', 'Medienverfügbarkeit nicht festgestellt', 'Disponibilité du média non établie', 'Disponibilità del contenuto non accertata'],
