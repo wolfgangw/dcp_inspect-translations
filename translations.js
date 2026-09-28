@@ -5,9 +5,9 @@
 const RDD52_REPORT_TEXT = [
   ['Channel interpretation', 'Kanalinterpretation', 'Interprétation des canaux', 'Interpretazione dei canali'],
   ['Automatic', 'Automatisch', 'Automatique', 'Automatica'],
-  ['IMAX 5-channel', 'IMAX 5-Kanal', 'IMAX 5 canaux', 'IMAX 5 canali'],
-  ['IMAX 6-channel', 'IMAX 6-Kanal', 'IMAX 6 canaux', 'IMAX 6 canali'],
-  ['IMAX 12-channel', 'IMAX 12-Kanal', 'IMAX 12 canaux', 'IMAX 12 canali'],
+  ['IMAX 5', 'IMAX 5', 'IMAX 5', 'IMAX 5'],
+  ['IMAX 6', 'IMAX 6', 'IMAX 6', 'IMAX 6'],
+  ['IMAX 12', 'IMAX 12', 'IMAX 12', 'IMAX 12'],
   ['Wait for audio analysis to finish before changing channel interpretation.', 'Warten Sie vor dem Ändern der Kanalinterpretation auf den Abschluss der Audioanalyse.', 'Attendez la fin de l’analyse audio avant de modifier l’interprétation des canaux.', 'Attendi la fine dell’analisi audio prima di cambiare l’interpretazione dei canali.'],
   ['Recalculate loudness', 'Lautheit neu berechnen', 'Recalculer la sonie', 'Ricalcola la loudness'],
   ['Corrupt sound', 'Beschädigter Ton', 'Son endommagé', 'Audio danneggiato'],
