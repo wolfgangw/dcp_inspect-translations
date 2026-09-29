@@ -3,6 +3,9 @@
 // RDD 52 report templates. Columns: canonical English, German, French, Italian.
 // {0}, {1}, ... are evidence values, not translatable text. Keep XML/marker names intact.
 const RDD52_REPORT_TEXT = [
+  ['Checked within CPL playback ranges only.', 'Nur innerhalb der CPL-Wiedergabebereiche geprüft.', 'Vérifié uniquement dans les plages de lecture de la CPL.', 'Verificato solo negli intervalli di riproduzione della CPL.'],
+  ['Complete MainSound audio analysis is required.', 'Eine vollständige MainSound-Audioanalyse ist erforderlich.', 'Une analyse audio complète de MainSound est nécessaire.', 'È necessaria un’analisi audio completa di MainSound.'],
+  ['Non-zero samples in required-silent MainSound channels: {0}. Checked within CPL playback ranges only.', 'Samples ungleich null in MainSound-Kanälen, die stumm sein müssen: {0}. Nur innerhalb der CPL-Wiedergabebereiche geprüft.', 'Échantillons non nuls dans les canaux MainSound devant être silencieux : {0}. Vérifié uniquement dans les plages de lecture de la CPL.', 'Campioni non nulli nei canali MainSound che devono essere silenziosi: {0}. Verificato solo negli intervalli di riproduzione della CPL.'],
   ['Channel interpretation', 'Kanalinterpretation', 'Interprétation des canaux', 'Interpretazione dei canali'],
   ['Automatic', 'Automatisch', 'Automatique', 'Automatica'],
   ['IMAX 5', 'IMAX 5', 'IMAX 5', 'IMAX 5'],
