@@ -3,6 +3,14 @@
 // RDD 52 report templates. Columns: canonical English, German, French, Italian.
 // {0}, {1}, ... are evidence values, not translatable text. Keep XML/marker names intact.
 const RDD52_REPORT_TEXT = [
+  ['{count} requirement failed', '{count} Anforderung nicht erfüllt', '{count} exigence non satisfaite', '{count} requisito non soddisfatto'],
+  ['{count} requirements failed', '{count} Anforderungen nicht erfüllt', '{count} exigences non satisfaites', '{count} requisiti non soddisfatti'],
+  ['{count} requirement passed', '{count} Anforderung erfüllt', '{count} exigence satisfaite', '{count} requisito soddisfatto'],
+  ['{count} requirements passed', '{count} Anforderungen erfüllt', '{count} exigences satisfaites', '{count} requisiti soddisfatti'],
+  ['{count} requirement remains unverified by dcp_inspect', '{count} Anforderung bleibt durch dcp_inspect ungeprüft', '{count} exigence reste à vérifier par dcp_inspect', '{count} requisito resta da verificare con dcp_inspect'],
+  ['{count} requirements remain unverified by dcp_inspect', '{count} Anforderungen bleiben durch dcp_inspect ungeprüft', '{count} exigences restent à vérifier par dcp_inspect', '{count} requisiti restano da verificare con dcp_inspect'],
+  ['{count} recommendation remains unverified by dcp_inspect', '{count} Empfehlung bleibt durch dcp_inspect ungeprüft', '{count} recommandation reste à vérifier par dcp_inspect', '{count} raccomandazione resta da verificare con dcp_inspect'],
+  ['{count} recommendations remain unverified by dcp_inspect', '{count} Empfehlungen bleiben durch dcp_inspect ungeprüft', '{count} recommandations restent à vérifier par dcp_inspect', '{count} raccomandazioni restano da verificare con dcp_inspect'],
   ['Complete component-size evidence requires Hashes/Codestreams, readable ordered tile parts and an applicable frame rate.', 'Vollständige Komponentengrößen erfordern Hashes/Codestreams, lesbare geordnete Tile-Parts und eine anwendbare Bildrate.', 'La vérification complète des tailles nécessite Hashes/Codestreams, des tile-parts ordonnées et lisibles et une cadence applicable.', 'La verifica completa delle dimensioni richiede Hashes/Codestreams, tile-part ordinate e leggibili e una frequenza fotogrammi applicabile.'],
   ['{0}: 2K component {1} is {2} bytes at codestream {3}; limit {4} bytes.', '{0}: 2K-Komponente {1} hat {2} Bytes bei Codestream {3}; Grenze {4} Bytes.', '{0} : composante 2K {1} de {2} octets au codestream {3} ; limite {4} octets.', '{0}: componente 2K {1} di {2} byte nel codestream {3}; limite {4} byte.'],
   ['{0}: 2K portion including headers is {1} bytes at codestream {2}; limit {3} bytes.', '{0}: 2K-Anteil einschließlich Header hat {1} Bytes bei Codestream {2}; Grenze {3} Bytes.', '{0} : portion 2K avec en-têtes de {1} octets au codestream {2} ; limite {3} octets.', '{0}: porzione 2K incluse le intestazioni di {1} byte nel codestream {2}; limite {3} byte.'],
