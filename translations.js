@@ -3,6 +3,13 @@
 // RDD 52 report templates. Columns: canonical English, German, French, Italian.
 // {0}, {1}, ... are evidence values, not translatable text. Keep XML/marker names intact.
 const RDD52_REPORT_TEXT = [
+  ['Validate picture essence', 'Bildessenz validieren', 'Valider l’essence image', 'Valida essenza immagine'],
+  ['Picture validation: {done}/{total} · {percent}% · {fps} fps', 'Bildvalidierung: {done}/{total} · {percent}% · {fps} fps', 'Validation image : {done}/{total} · {percent}% · {fps} fps', 'Validazione immagini: {done}/{total} · {percent}% · {fps} fps'],
+  ['Checks every frame and both eyes. CPU-intensive; click again to cancel.', 'Prüft jedes Bild und beide Augen. CPU-intensiv; erneut klicken zum Abbrechen.', 'Vérifie chaque image et les deux yeux. Calcul intensif ; recliquer pour annuler.', 'Controlla ogni fotogramma ed entrambi gli occhi. Calcolo intensivo; ricliccare per annullare.'],
+  ['Cancelled', 'Abgebrochen', 'Annulé', 'Annullato'],
+  ['Packet/codeblock validation: {checked} codestreams; {failed} rejected; {unavailable} unavailable or unresolved.', 'Paket-/Codeblock-Prüfung: {checked} Codestreams; {failed} fehlerhaft; {unavailable} nicht verfügbar oder ungeklärt.', 'Validation paquets/blocs : {checked} codestreams ; {failed} rejetés ; {unavailable} indisponibles ou indéterminés.', 'Validazione pacchetti/codeblock: {checked} codestream; {failed} rifiutati; {unavailable} non disponibili o indeterminati.'],
+  ['Strict picture validation rejected {0} codestreams.', 'Die strikte Bildvalidierung hat {0} Codestreams abgelehnt.', 'La validation stricte des images a rejeté {0} codestreams.', 'La validazione rigorosa delle immagini ha rifiutato {0} codestream.'],
+  ['Packet and codeblock checks completed; remaining ST 429-4 and normative coverage audit is pending.', 'Paket- und Codeblock-Prüfungen abgeschlossen; die übrige ST-429-4- und normative Abdeckungsprüfung steht noch aus.', 'Vérifications des paquets et blocs terminées ; l’audit des autres exigences ST 429-4 et de couverture normative reste en cours.', 'Controlli di pacchetti e codeblock completati; restano l’audit degli altri requisiti ST 429-4 e della copertura normativa.'],
   ['Requirement', 'Anforderung', 'Exigence', 'Requisito'],
   ['Recommendation', 'Empfehlung', 'Recommandation', 'Raccomandazione'],
   ['SIZ declares cinema dimensions, origins and unsigned 12-bit 4:4:4 components', 'SIZ deklariert Cinema-Abmessungen, Ursprünge und vorzeichenlose 12-Bit-4:4:4-Komponenten', 'SIZ déclare des dimensions et origines cinéma et des composantes 4:4:4 non signées de 12 bits', 'SIZ dichiara dimensioni e origini cinema e componenti 4:4:4 senza segno a 12 bit'],
