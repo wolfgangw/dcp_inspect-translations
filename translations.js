@@ -3,6 +3,11 @@
 // RDD 52 report templates. Columns: canonical English, German, French, Italian.
 // {0}, {1}, ... are evidence values, not translatable text. Keep XML/marker names intact.
 const RDD52_REPORT_TEXT = [
+  ['ContentTitleText does not have a recognized DCNC field structure.', 'ContentTitleText hat keine erkannte DCNC-Feldstruktur.', 'ContentTitleText ne présente pas de structure DCNC reconnue.', 'ContentTitleText non presenta una struttura DCNC riconosciuta.'],
+  ['ContentTitleText {0}: {1}; metadata: {2}.', 'ContentTitleText {0}: {1}; Metadaten: {2}.', 'ContentTitleText {0} : {1} ; métadonnées : {2}.', 'ContentTitleText {0}: {1}; metadati: {2}.'],
+  ['Naming comparisons unresolved: {0}.', 'Ungeklärte Namensvergleiche: {0}.', 'Comparaisons de nom non résolues : {0}.', 'Confronti del nome non risolti: {0}.'],
+  ['No comparable CMA and ContentTitleText fields are available.', 'Keine vergleichbaren CMA- und ContentTitleText-Felder verfügbar.', 'Aucun champ CMA et ContentTitleText comparable n’est disponible.', 'Nessun campo CMA e ContentTitleText confrontabile disponibile.'],
+  ['Naming agrees with metadata: {0}.', 'Name stimmt mit Metadaten überein: {0}.', 'Le nom correspond aux métadonnées : {0}.', 'Il nome corrisponde ai metadati: {0}.'],
   ['Validate picture essence', 'Bildessenz validieren', 'Valider l’essence image', 'Valida essenza immagine'],
   ['Picture validation: {done}/{total} · {percent}% · {fps} fps', 'Bildvalidierung: {done}/{total} · {percent}% · {fps} fps', 'Validation image : {done}/{total} · {percent}% · {fps} fps', 'Validazione immagini: {done}/{total} · {percent}% · {fps} fps'],
   ['Checks every frame and both eyes. CPU-intensive; click again to cancel.', 'Prüft jedes Bild und beide Augen. CPU-intensiv; erneut klicken zum Abbrechen.', 'Vérifie chaque image et les deux yeux. Calcul intensif ; recliquer pour annuler.', 'Controlla ogni fotogramma ed entrambi gli occhi. Calcolo intensivo; ricliccare per annullare.'],
