@@ -3,6 +3,10 @@
 // RDD 52 report templates. Columns: canonical English, German, French, Italian.
 // {0}, {1}, ... are evidence values, not translatable text. Keep XML/marker names intact.
 const RDD52_REPORT_TEXT = [
+  ['ContentTitleText fields missing or unrecognized: {0}.', 'Fehlende oder nicht erkannte ContentTitleText-Felder: {0}.', 'Champs ContentTitleText absents ou non reconnus : {0}.', 'Campi ContentTitleText mancanti o non riconosciuti: {0}.'],
+  ['ContentTitleText fields ambiguous: {0}.', 'Mehrdeutige ContentTitleText-Felder: {0}.', 'Champs ContentTitleText ambigus : {0}.', 'Campi ContentTitleText ambigui: {0}.'],
+  ['ContentTitleText unassigned text: {0}.', 'Nicht zugeordneter ContentTitleText-Text: {0}.', 'Texte ContentTitleText non attribué : {0}.', 'Testo ContentTitleText non assegnato: {0}.'],
+  ['ContentTitleText field separators recovered: {0}.', 'Rekonstruierte ContentTitleText-Feldtrenner: {0}.', 'Séparateurs de champs ContentTitleText reconstitués : {0}.', 'Separatori dei campi ContentTitleText ricostruiti: {0}.'],
   ['ContentTitleText does not have a recognized DCNC field structure.', 'ContentTitleText hat keine erkannte DCNC-Feldstruktur.', 'ContentTitleText ne présente pas de structure DCNC reconnue.', 'ContentTitleText non presenta una struttura DCNC riconosciuta.'],
   ['ContentTitleText {0}: {1}; metadata: {2}.', 'ContentTitleText {0}: {1}; Metadaten: {2}.', 'ContentTitleText {0} : {1} ; métadonnées : {2}.', 'ContentTitleText {0}: {1}; metadati: {2}.'],
   ['Naming comparisons unresolved: {0}.', 'Ungeklärte Namensvergleiche: {0}.', 'Comparaisons de nom non résolues : {0}.', 'Confronti del nome non risolti: {0}.'],
