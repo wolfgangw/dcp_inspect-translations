@@ -280,6 +280,7 @@ export const RDD52_MESSAGES = Object.fromEntries(['en', 'de', 'fr', 'it'].map((l
 
 // General inspection findings, separate from profile-report messages.
 const FINDING_TEXT = [
+  ['Reel {0} uses the SMPTE stereo element namespace with Interop track fields; the picture reference is recognized as an Interop compatibility variant.', 'Rolle {0} verwendet den SMPTE-Stereo-Elementnamensraum mit Interop-Track-Feldern; die Bildreferenz wird als Interop-Kompatibilitätsvariante erkannt.', 'La bobine {0} utilise l’espace de noms stéréo SMPTE avec des champs de piste Interop ; la référence image est reconnue comme variante de compatibilité Interop.', 'Il rullo {0} usa lo spazio dei nomi stereo SMPTE con campi traccia Interop; il riferimento immagine è riconosciuto come variante di compatibilità Interop.'],
   ['CPL MainSound Language {0} is inconsistent with MXF soundfield-group language {1} (SMPTE ST 429-7 §8.5–8.5.1). The MXF value takes precedence.',
     'CPL MainSound Language {0} stimmt nicht mit der Sprache der MXF-Soundfield-Group {1} überein (SMPTE ST 429-7 §8.5–8.5.1). Der MXF-Wert hat Vorrang.',
     'CPL MainSound Language {0} ne correspond pas à la langue du groupe de champ sonore MXF {1} (SMPTE ST 429-7 §8.5–8.5.1). La valeur MXF prévaut.',
